@@ -1,3 +1,8 @@
+/*
+Program By:Upendra bartwal
+Desciption:this is producer consumer problem solution,in which i have consider that there is a bucket only showing the number of item
+not a queue just a integer only a producer can produce at a time and only a consumer can consume at a time.
+*/
 #include<iostream>
 #include<vector>
 #include<unistd.h>
