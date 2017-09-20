@@ -18,7 +18,7 @@ void *producer(void *vargp)
     pthread_mutex_lock(&mutex3);//to ensure no two producer get inside cs at same time
     if(bucket!=SIZE)
     {
-        pthread_mutex_lock(&mutex); //for ensuring that if bucket size is not full than consumer cant go in cs
+        pthread_mutex_lock(&mutex); //for ensuring that if bucket size is  full than consumer cant go in cs
         flag=1;
     }
      while(bucket==SIZE)
